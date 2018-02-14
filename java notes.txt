@@ -1,0 +1,134 @@
+public class MyClass {
+    public static void main(String args[]) {
+        int x=10;
+        int y=25;
+        int z=x+y;
+        int i=0;
+        
+        if(x==10){
+             System.out.println("*");
+             x++;
+         }
+    
+        if(x<=11){
+             System.out.println("* *");
+             x++;
+         }
+        if(x>=10){
+             System.out.println("* * *");
+             x++;
+         }
+        
+        if(y<=26){
+             System.out.println("* *");
+             y--;
+         }
+        if(y>=10){
+             System.out.println("*");
+             y--;
+         }
+            
+    }
+}
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public class MyClass
+{
+    public static void main(String args[])
+    {
+             for (int i=0; i<=5; i++)
+             {
+                 for (int j=0; j<i; j++)
+                    {
+                        System.out.print("*");
+                     }
+                System.out.println("");
+            }
+            
+            for(int k=1; k< 5; k++)
+            {
+                 for (int j = 5;j > k ;j--)
+                {
+                     System.out.print("*");
+                 }
+                 System.out.println("");
+            }
+          
+    }         
+}
+
+Calling Method
+-------------------------------------------------------------------------------------------------------------------
+public class MyClass
+{
+	
+
+    	private static void printOne() {
+	    int mSchool=10;
+        int mClass=25;
+        int mCount=mSchool+mClass;
+
+        if(mSchool==10){
+             System.out.println("*");
+             mSchool++;
+         }
+    
+        if(mSchool<=11){
+             System.out.println("* *");
+             mSchool++;
+         }
+        if(mSchool>=10){
+             System.out.println("* * *");
+             mSchool++;
+         }
+        
+        if(mClass<=26){
+             System.out.println("* *");
+             mClass--;
+         }
+        if(mClass>=10){
+             System.out.println("*");
+             mClass--;
+         }
+         
+	}	public static void main(String[] args) {
+		printOne();
+
+}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+public class MyClass {
+    
+   static int mRows,mColoumns;
+   private static void stars(){
+            
+                for(mRows=1;mRows<=6;mRows++){
+            
+                for(mColoumns=1;mColoumns<mRows;mColoumns++){
+                
+                System.out.print("*");
+            }
+                System.out.println(" ");
+            }
+        
+                for(mRows=6;mRows>=1;mRows--){
+         
+                for(mColoumns=mRows;mColoumns>1;mColoumns--){
+                
+                System.out.print("*");
+            }
+                System.out.println(" ");
+            }
+            
+       
+            }
+              public static void main(String args[]) {
+         
+              stars();
+   }
+}

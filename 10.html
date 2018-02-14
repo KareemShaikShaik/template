@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+body {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 0;
+}
+.card-container {
+  cursor: pointer;
+  height: 50%;
+  perspective: 600;
+  position: relative;
+  width: 50%;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(360deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 60px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: black;
+  color: #0087cc;
+  line-height: 300px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+</style>
+<div class="card-container">
+  <div class="card">
+    <div class="side"><img src="imgs/05.jpg" alt="imgs"></div>
+    <div class="side back">Image</div>
+  </div>
+</div>
+</body></head>
+</html>
